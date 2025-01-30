@@ -3,7 +3,7 @@ from .models import Student
 
 #validators
 def start_with_s(value):
-    if value[0].lower() != 'r':
+    if value[0].lower() != 's':
         raise serializers.ValidationError('Name should be start with s')
 
 class StudentSerializer(serializers.Serializer):
